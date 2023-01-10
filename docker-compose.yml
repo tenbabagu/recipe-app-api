@@ -18,6 +18,7 @@ services:
       - DB_USER=devuser
       - DB_PASSWORD=changeme
     depends_on:
+      # the depency service will run firstly, but not the application, which will cause the race condition
       - db
   
   db:
