@@ -25,5 +25,6 @@ urlpatterns = [
     path('api/shchema/', SpectacularAPIView.as_view(),
          name="api-schema"),  # generate YAML file for api schema
     path('api/docs',
-         SpectacularSwaggerView.as_view(url_name="api-schema"), name="api-docs")
+         SpectacularSwaggerView.as_view(url_name="api-schema"),
+         name="api-docs")
 ]
